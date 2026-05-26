@@ -2,173 +2,124 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>祎祎 · 成长评估</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,'PingFang SC','Heiti SC',sans-serif;background:#faf9f6;color:#334155;font-size:13px;line-height:1.6}
-.page{max-width:420px;margin:0 auto;padding:0}
+.page{max-width:420px;margin:0 auto}
 .header{background:linear-gradient(135deg,#831843,#be185d,#db2777);color:#fff;padding:22px 18px 18px;text-align:center}
-.header .emoji{font-size:32px}
 .header h1{font-size:18px;font-weight:700;margin:4px 0}
-.header .sub{font-size:11px;color:#fce7f3;opacity:.9}
-.tl{display:flex;justify-content:center;gap:0;padding:14px 10px;background:#fff;border-bottom:1px solid #f1f5f9}
-.tl-item{flex:1;text-align:center;font-size:10px;padding:0 2px}
-.tl-dot{width:10px;height:10px;border-radius:50%;margin:0 auto 4px}
+.header .sub{font-size:11px;color:#fce7f3}
+.tl{display:flex;justify-content:center;gap:0;padding:12px 10px;background:#fff;border-bottom:1px solid #f1f5f9}
+.tl-item{flex:1;text-align:center;font-size:9px;padding:0 2px}
+.tl-dot{width:10px;height:10px;border-radius:50%;margin:0 auto 3px}
 .tl-dot.d1{background:#7FB5A0}.tl-dot.d2{background:#D4B896}.tl-dot.d3{background:#db2777;box-shadow:0 0 8px rgba(219,39,119,.3)}
-.tl-date{font-size:9px;color:#94a3b8}
-
-.sec{padding:0 14px;margin-bottom:10px}
-.sec-title{font-size:14px;font-weight:700;color:#475569;padding:14px 0 8px;display:flex;align-items:center;gap:6px}
+.sec{padding:0 14px;margin-bottom:4px}
+.sec-title{font-size:14px;font-weight:700;color:#475569;padding:14px 0 6px;display:flex;align-items:center;gap:6px}
 .sec-title .emoji{font-size:18px}
-
-.card{background:#fff;border-radius:10px;padding:12px;margin-bottom:8px;border:1px solid #f1f5f9}
+.card{background:#fff;border-radius:10px;padding:12px;margin-bottom:6px;border:1px solid #f1f5f9}
 .card .cd{font-size:10px;color:#94a3b8;margin-bottom:2px}
-.card .ct{font-size:11px;color:#64748b;font-weight:600;margin-bottom:6px}
 .card.latest{border:2px solid #f472b6;background:linear-gradient(135deg,#fff5f6,#fff)}
-
-.bars{margin:6px 0}
 .bar-row{display:flex;align-items:center;gap:6px;margin:3px 0}
 .bar-lbl{font-size:10px;color:#64748b;width:56px;text-align:right;flex-shrink:0}
 .bar-bg{flex:1;height:6px;background:#f1f5f9;border-radius:3px;overflow:hidden}
 .bar-fill{height:100%;border-radius:3px}
-.pink{background:#db2777}.amber{background:#f59e0b}.green{background:#10b981}.blue{background:#3b82f6}
 .bar-val{font-size:10px;font-weight:600;width:28px;flex-shrink:0}
-
-.pt{font-size:11px;color:#475569;line-height:1.5;margin:4px 0}
-.pt .tag{display:inline-block;font-size:9px;padding:1px 6px;border-radius:8px;margin-right:4px}
-.pt .tg{background:#dcfce7;color:#16a34a}
-.pt .tw{background:#fef3c7;color:#a16207}
-
-.bt{font-size:11px;color:#64748b;line-height:1.5;margin:4px 0;padding-left:12px;border-left:2px solid #f1f5f9}
+.pt{font-size:11px;color:#475569;line-height:1.4;margin:4px 0}
+.tag{display:inline-block;font-size:9px;padding:1px 6px;border-radius:8px;margin:2px 3px 2px 0;background:#dcfce7;color:#16a34a}
+.bt{font-size:11px;color:#64748b;line-height:1.4;margin:4px 0;padding-left:12px;border-left:2px solid #f1f5f9}
 .bt strong{color:#475569}
-
-.foot{text-align:center;color:#cbd5e1;font-size:10px;padding:20px 14px;line-height:1.6}
+.summary{background:linear-gradient(135deg,#fef3c7,#fef9c3);border-radius:10px;padding:12px;margin:0 14px 10px;font-size:11px;color:#92400e;line-height:1.8}
+.summary strong{color:#a16207}
+.foot{text-align:center;color:#cbd5e1;font-size:10px;padding:14px;line-height:1.6}
 </style>
 </head>
-<body>
-<div class="page">
-
-<div class="header">
-<div class="emoji">🌱</div>
-<h1>白祎晨（祎祎）</h1>
-<div class="sub">社交成长评估 · 三次跟踪对比</div>
-</div>
+<body><div class="page">
+<div class="header"><h1>白祎晨（祎祎）</h1><div class="sub">社交成长评估 · 三次跟踪对比</div></div>
 
 <div class="tl">
-<div class="tl-item"><div class="tl-dot d1"></div><div class="tl-date">2025/04</div><div style="font-size:9px">初评</div></div>
-<div class="tl-item"><div class="tl-dot d2"></div><div class="tl-date">2025/07</div><div style="font-size:9px">中期①</div></div>
-<div class="tl-item"><div class="tl-dot d3"></div><div class="tl-date">2026/03</div><div style="font-size:9px">中期②</div></div>
+<div class="tl-item"><div class="tl-dot d1"></div><div style="font-size:9px">初评</div></div>
+<div class="tl-item"><div class="tl-dot d2"></div><div style="font-size:9px">中期①</div></div>
+<div class="tl-item"><div class="tl-dot d3"></div><div style="font-size:9px">中期②</div></div>
 </div>
 
-<!-- 情绪能力 -->
 <div class="sec">
 <div class="sec-title"><span class="emoji">💜</span>情绪能力</div>
-
 <div class="card">
 <div class="cd">初评</div>
-<div class="bars">
-<div class="bar-row"><span class="bar-lbl">反应性</span><div class="bar-bg"><div class="bar-fill pink" style="width:70%"></div></div><span class="bar-val" style="color:#db2777">70%</span></div>
-<div class="bar-row"><span class="bar-lbl">自控力</span><div class="bar-bg"><div class="bar-fill pink" style="width:80%"></div></div><span class="bar-val" style="color:#db2777">80%</span></div>
-<div class="bar-row"><span class="bar-lbl">共情力</span><div class="bar-bg"><div class="bar-fill pink" style="width:75%"></div></div><span class="bar-val" style="color:#db2777">75%</span></div>
-</div>
-<div class="pt"><span class="tag tg">进步</span>独立参与课程、安坐倾听、有表情回应</div>
-<div class="bt"><strong>挑战：</strong>进入新环境明显紧张，较容易产生紧张情绪</div>
-</div>
-
-<div class="card">
+<div class="bar-row"><span class="bar-lbl">情绪反应性</span><div class="bar-bg"><div class="bar-fill" style="width:70%;background:#db2777"></div></div><span class="bar-val" style="color:#db2777">70%</span></div><div class="bar-row"><span class="bar-lbl">自控力</span><div class="bar-bg"><div class="bar-fill" style="width:80%;background:#db2777"></div></div><span class="bar-val" style="color:#db2777">80%</span></div><div class="bar-row"><span class="bar-lbl">共情能力</span><div class="bar-bg"><div class="bar-fill" style="width:75%;background:#db2777"></div></div><span class="bar-val" style="color:#db2777">75%</span></div>
+<div class="pt"><span class="tag tg">能独立参与课程，安坐并专心倾听</span> <span class="tag tg">有恰当的表情回应</span> <span class="tag tg">具备较好的调节能力，压力不大时可以参与活动</span> </div>
+<div class="bt"><strong>待改善：</strong>进入新环境有明显紧张；较容易产生紧张情绪</div>
+</div><div class="card">
 <div class="cd">中期①</div>
-<div class="pt"><span class="tag tg">进步</span>逐渐放松，从不太说话到回应老师、偶尔发言</div>
-<div class="bt">情绪状态逐步松驰，参与度提升</div>
-</div>
 
-<div class="card latest">
+<div class="pt"><span class="tag tg">初期紧张但逐渐放松</span> <span class="tag tg">从不太说话到会回应老师、偶尔发言</span> <span class="tag tg">情绪状态逐渐松弛</span> </div>
+
+</div><div class="card latest">
 <div class="cd">中期② · 📌 最新</div>
-<div class="pt"><span class="tag tg">进步</span>情绪松弛，会调皮捉弄老师——放松的积极信号</div>
-<div class="bt"><strong>待改善：</strong>情绪低落时需较长时间恢复</div>
-</div>
-</div>
 
-<!-- 社交掌控感 -->
-<div class="sec">
+<div class="pt"><span class="tag tg">近期情绪状态松弛下来了</span> <span class="tag tg">放松时想和老师调皮或'捉弄'老师</span> <span class="tag tg">表现出淘气的样子——这是放松的信号</span> </div>
+<div class="bt"><strong>待改善：</strong>情绪低落时需要一定时间才会恢复；进入教室前兴致不高时需要安抚</div>
+</div>
+</div><div class="sec">
 <div class="sec-title"><span class="emoji">💪</span>社交掌控感</div>
-
-<div class="card">
-<div class="cd">初评 · 综合 47%</div>
-<div class="bar-row"><span class="bar-lbl">综合</span><div class="bar-bg"><div class="bar-fill amber" style="width:47%"></div></div><span class="bar-val" style="color:#f59e0b">47%</span></div>
-<div class="bt"><strong>核心问题：</strong>自信心偏低，对抗游戏退缩，不会用身体力量</div>
-</div>
-
-<div class="card">
-<div class="cd">中期①</div>
-<div class="pt"><span class="tag tg">进步</span>从退缩到"当裁判→回归游戏"；故意不守规则——自信提升信号！</div>
-<div class="bt"><strong>挑战：</strong>带领环节仍退缩，同龄交往主动退让</div>
-</div>
-
-<div class="card latest">
-<div class="cd">中期② · 📌 最新</div>
-<div class="pt"><span class="tag tg">进步</span>参与变多，用自己的方式掌控游戏；不再过度抓老师注意力</div>
-<div class="bt"><strong>待改善：</strong>偶尔过度依赖特定老师，集体活动中略显被动</div>
-</div>
-</div>
-
-<!-- 社交技能 -->
-<div class="sec">
-<div class="sec-title"><span class="emoji">🤝</span>社交技能</div>
-
-<div class="card">
-<div class="cd">初评 · 沟通42% · 合作35%</div>
-<div class="bar-row"><span class="bar-lbl">沟通</span><div class="bar-bg"><div class="bar-fill blue" style="width:42%"></div></div><span class="bar-val" style="color:#3b82f6">42%</span></div>
-<div class="bar-row"><span class="bar-lbl">合作</span><div class="bar-bg"><div class="bar-fill blue" style="width:35%"></div></div><span class="bar-val" style="color:#3b82f6">35%</span></div>
-<div class="bt"><strong>挑战：</strong>仅与老师简单沟通，无同伴交往意愿，同龄中表现弱势</div>
-</div>
-
-<div class="card">
-<div class="cd">中期①</div>
-<div class="pt"><span class="tag tg">进步</span>主动亲近老师、分享故事、捉弄老师；接受同伴邀约、合作出击</div>
-<div class="bt"><strong>挑战：</strong>很少主动邀请同伴，自由时间更愿缩在妈妈怀里</div>
-</div>
-
-<div class="card latest">
-<div class="cd">中期② · 📌 最新</div>
-<div class="pt"><span class="tag tg">进步</span>主动分享食物、公开表达想法、合作中主动商量对策并执行</div>
-<div class="bt"><strong>待改善：</strong>"习惯性否定"倾向、同伴主动性待提高</div>
-</div>
-</div>
-
-<!-- 心智能力 -->
-<div class="sec">
-<div class="sec-title"><span class="emoji">🧠</span>心智解读</div>
-
 <div class="card">
 <div class="cd">初评</div>
-<div class="bt"><strong>观察：</strong>未通过错误信念测试，难以理解"他人跟我想法不一样"</div>
-</div>
-
-<div class="card">
+<div class="bar-row"><span class="bar-lbl">综合</span><div class="bar-bg"><div class="bar-fill" style="width:47%;background:#f59e0b"></div></div><span class="bar-val" style="color:#f59e0b">47%</span></div>
+<div class="pt"><span class="tag tg">力量对抗环节可以独立参与</span> <span class="tag tg">能完成基本的互动要求</span> </div>
+<div class="bt"><strong>待改善：</strong>追跑游戏环节明显紧张；需要在众人面前的环节有明显退缩和逃避；不会使用身体力量，只做拉拽</div>
+</div><div class="card">
 <div class="cd">中期①</div>
-<div class="pt"><span class="tag tg">进步</span>理解幽默玩笑、配合同伴"小阴谋"不揭露</div>
-</div>
 
-<div class="card latest">
+<div class="pt"><span class="tag tg">从'一开始就退缩'到'能独立参与但有时退回'</span> <span class="tag tg">接受'当裁判'的替代角色，观察后回归游戏</span> <span class="tag tg">近期故意不遵守规则——自信心提升的信号</span> <span class="tag tg">身体运用能力大幅提升</span> </div>
+<div class="bt"><strong>待改善：</strong>动作带领环节仍不愿带领；同龄交往中主动退让，还没冲突就退缩；捡球游戏中同伴也想捡就马上缩手</div>
+</div><div class="card latest">
 <div class="cd">中期② · 📌 最新</div>
-<div class="pt"><span class="tag tg">进步</span>智力对抗表现好、不做"规则警察"——思维灵活性显著提升</div>
-<div class="bt"><strong>待观察：</strong>忍不住抢答（冲动控制）</div>
+
+<div class="pt"><span class="tag tg">活动参与变多，出教室次数减少</span> <span class="tag tg">用自己的方式参与游戏（如钻山洞时给大家发胡萝卜）</span> <span class="tag tg">不再过分想抓住老师注意力（自然轻松互动）</span> <span class="tag tg">之前带新奇物品吸引关注的做法减少</span> </div>
+<div class="bt"><strong>待改善：</strong>有时会过度依赖或黏着特定老师；集体活动中略显被动（一旦玩起来能力足够）</div>
+</div>
+</div><div class="sec">
+<div class="sec-title"><span class="emoji">🤝</span>社交技能</div>
+<div class="card">
+<div class="cd">初评</div>
+<div class="bar-row"><span class="bar-lbl">沟通技能</span><div class="bar-bg"><div class="bar-fill" style="width:42%;background:#3b82f6"></div></div><span class="bar-val" style="color:#3b82f6">42%</span></div><div class="bar-row"><span class="bar-lbl">合作技能</span><div class="bar-bg"><div class="bar-fill" style="width:35%;background:#3b82f6"></div></div><span class="bar-val" style="color:#3b82f6">35%</span></div>
+<div class="pt"><span class="tag tg">能与老师进行简单沟通</span> <span class="tag tg">放松时会主动跟老师说话</span> </div>
+<div class="bt"><strong>待改善：</strong>没有与小朋友沟通的意愿；同龄交往中表现弱势；紧张抑制了参与度</div>
+</div><div class="card">
+<div class="cd">中期①</div>
+
+<div class="pt"><span class="tag tg">与老师主动互动越来越多</span> <span class="tag tg">从简单回复到主动亲近、分享故事</span> <span class="tag tg">有需求时主动找老师</span> <span class="tag tg">能与同伴协作完成合作任务</span> </div>
+<div class="bt"><strong>待改善：</strong>社交分寸感有待提升（捉弄老师不分场合）；加餐后自由时间更愿缩在妈妈怀里；很少主动邀请同伴组队</div>
+</div><div class="card latest">
+<div class="cd">中期② · 📌 最新</div>
+
+<div class="pt"><span class="tag tg">愿意主动与他人分享食物</span> <span class="tag tg">公开场合主动且清晰地表达想法</span> <span class="tag tg">合作类游戏中主动加入同伴商量对策并执行</span> <span class="tag tg">自由时间愿意更多与老师和同伴互动</span> </div>
+<div class="bt"><strong>待改善：</strong>对一些观点持否定态度（如'没有舒服的地方'等）；同伴社交的主动性仍待提高</div>
+</div>
+</div><div class="sec">
+<div class="sec-title"><span class="emoji">🧠</span>心智解读</div>
+<div class="card">
+<div class="cd">初评</div>
+
+<div class="pt"><span class="tag tg">未通过错误信念测试</span> <span class="tag tg">认知特点与同龄孩子有差异（同一张画不同角度看认为是不同的画）</span> <span class="tag tg">不能回答'上哪个幼儿园'等社交问题</span> </div>
+<div class="bt"><strong>待改善：</strong>难以理解'他人跟我想法不一样'；社交类问题回答困难</div>
+</div><div class="card">
+<div class="cd">中期①</div>
+
+<div class="pt"><span class="tag tg">理解幽默玩笑（老师故意出错时会帮助老师）</span> <span class="tag tg">配合同伴的'小阴谋'，不会揭露</span> <span class="tag tg">同理心表现好</span> <span class="tag tg">能理解社交中的隐藏意图</span> </div>
+
+</div><div class="card latest">
+<div class="cd">中期② · 📌 最新</div>
+
+<div class="pt"><span class="tag tg">智力对抗游戏中主动参与，表现非常好</span> <span class="tag tg">不再做'规则警察'（之前会指出小朋友藏在哪里），思维灵活性提升</span> <span class="tag tg">能理解游戏中的策略和对抗</span> </div>
+<div class="bt"><strong>待改善：</strong>在新小朋友做测试时忍不住抢答（即使多次暗示不要）</div>
 </div>
 </div>
 
-<!-- Summary -->
-<div class="sec" style="margin-top:4px">
-<div style="background:linear-gradient(135deg,#fef3c7,#fef9c3);border-radius:10px;padding:14px;font-size:11px;color:#92400e;line-height:1.8">
-<strong>💡 整体趋势</strong><br>
-三条评估线均呈上升趋势。核心变化：从紧张退缩→逐渐放松→试探力量→开始融入同伴。掌控感是进步最快的维度，情绪能力一直是最稳定的基础。下阶段重点：同伴主动性 + 正向表达。
-</div>
-</div>
+<div class="summary"><strong>💡 整体趋势</strong><br>
+祎祎在三次评估中呈现持续进步趋势。核心变化：从紧张退缩→逐渐放松→试探力量→开始融入同伴。掌控感是进步最快的维度，情绪能力一直是最稳定的基础。下阶段重点：同伴主动性 + 正向表达能力 + 社交分寸感。</div>
 
-<div class="foot">
-🌱 儿童社交成长评估<br>评估老师：钟煜、金子 · 生成于 2026年5月25日
-</div>
-
-</div>
-</body>
-</html>
+<div class="foot">🌱 儿童社交成长评估<br>评估老师：钟煜、金子 · 2026-05-26 生成</div>
+</div></body></html>
